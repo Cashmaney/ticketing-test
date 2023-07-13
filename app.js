@@ -106,8 +106,8 @@ app.get('/validate', async function(req, res) {
   }
 });
 
-app.listen(3000, async function () {
-  console.log('Example app listening on port 3000!');
+app.listen(8080, async function () {
+  console.log('Example app listening on port 8080!');
 
   const {publicKey, privateKey} = await generateKey();
   globalPk = "7bd51520fa677b420918ff991876681f561c38a05510606adaef413d9c23b80d";
