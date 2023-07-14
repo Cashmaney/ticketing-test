@@ -102,7 +102,7 @@ app.get('/validate', async function(req, res) {
   if (difference <= 5) {
     res.status(200).send("Valid challenge");
   } else {
-    res.status(400).send("Challenge expired");
+    res.status(200).send("Challenge expired");
   }
 });
 
